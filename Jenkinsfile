@@ -384,10 +384,12 @@ EOF
             // Calculate max response time
             def maxResponse = sh(script: "tail -n +2 ${OUT_DIR}/results.jtl | awk -F',' '{if(\$2>max) max=\$2} END {print int(max)}'", returnStdout: true).trim().toInteger()
 
+            def roundedSuccess = (successRate * 10).setScale(0, BigDecimal.ROUND_HALF_UP) / 10
+
             echo "📊 Performance Test Results:"
             echo "   Total Requests: ${results}"
             echo "   Errors: ${errors}"
-            echo "   Success Rate: ${Math.round(successRate * 10) / 10}%"
+            echo "   Success Rate: ${roundedSuccess}%"
             echo "   Average Response Time: ${avgResponse}ms"
             echo "   Max Response Time: ${maxResponse}ms"
 
@@ -426,7 +428,7 @@ EOF
             }
 
             // Enhanced build description with more metrics
-            currentBuild.description = "Success: ${Math.round(successRate * 10) / 10}% | Avg: ${avgResponse}ms | Max: ${maxResponse}ms | Requests: ${results}"
+            currentBuild.description = "Success: ${roundedSuccess}% | Avg: ${avgResponse}ms | Max: ${maxResponse}ms | Requests: ${results}"
             
             echo "📈 Performance Plugin will provide detailed trends and comparisons"
             echo "📊 Check 'Performance Trend' graph in project dashboard"
