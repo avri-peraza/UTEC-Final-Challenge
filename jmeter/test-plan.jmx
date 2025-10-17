@@ -82,7 +82,7 @@
         <hashTree/>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once - Inicializar Variables" enabled="true"/>
         <hashTree>
-          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Inicializar Variables de Login" enabled="true">
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Inicializar Variables de Login">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
@@ -95,7 +95,7 @@ log.info(&quot;🚀 Variables inicializadas UNA SOLA VEZ&quot;)</stringProp>
           </JSR223Sampler>
           <hashTree/>
         </hashTree>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop - Intentar Login (Max 3 veces)" enabled="true">
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop - Intentar Login (Max 3 veces)">
           <stringProp name="LoopController.loops">3</stringProp>
         </LoopController>
         <hashTree>
@@ -124,10 +124,10 @@ log.info(&quot;🔄 Intento de Login #&quot; + count)</stringProp>
             </TestAction>
             <hashTree/>
           </hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Login" enabled="true">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Login">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="683207277">Trabajo-Integrador</stringProp>
+              <stringProp name="-1226411132">test-plan</stringProp>
               <stringProp name="-1089917332">Test Fragment - Autenticacion</stringProp>
             </collectionProp>
           </ModuleController>
@@ -148,26 +148,26 @@ log.info(&quot;🔄 Intento de Login #&quot; + count)</stringProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Obtener Productos" enabled="true">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Obtener Productos">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="683207277">Trabajo-Integrador</stringProp>
+              <stringProp name="-1226411132">test-plan</stringProp>
               <stringProp name="132353982">Test Fragment - Productos</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Crear Carrito" enabled="true">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Crear Carrito">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="683207277">Trabajo-Integrador</stringProp>
+              <stringProp name="-1226411132">test-plan</stringProp>
               <stringProp name="774587441">Test Fragment - Carrito</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Realizar Compra" enabled="true">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Realizar Compra">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="683207277">Trabajo-Integrador</stringProp>
+              <stringProp name="-1226411132">test-plan</stringProp>
               <stringProp name="2115975347">Test Fragment - Compra</stringProp>
             </collectionProp>
           </ModuleController>
@@ -179,7 +179,7 @@ log.info(&quot;🔄 Intento de Login #&quot; + count)</stringProp>
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
-          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="ERROR - No se pudo obtener token después de todos los reintentos " enabled="true">
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="ERROR - No se pudo obtener token después de todos los reintentos ">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySystemProperties">false</boolProp>
